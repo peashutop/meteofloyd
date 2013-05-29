@@ -1,3 +1,75 @@
 <template name="news">
-<p>news</p>
+    <div id='timeless'>
+       <h2>background info</h2>
+       <p>
+         Floyd:
+         <a href='http://www.arlingtoncemetery.net/bennettf.htm' target='_blank'>the Man.</a>
+       </p>
+       <p>
+         Floyd:
+         <a href='http://www.nps.gov/history/nr/travel/aviation/flo.htm' target='_blank'>the Field.</a>
+       </p>
+       <p>
+         Floyd:
+         <a href='http://www.nydailynews.com/ny_local/2009/05/17/2009-05-17_great_parking_spot_bennett_field_a_campers_dream_in_crowded_bklyn.html' target='_blank'>the Daily News article.</a>
+       </p>
+       <p>
+         Floyd:
+         <a href='http://frugaltraveler.blogs.nytimes.com/2010/05/11/sleeping-under-the-stars-in-brooklyn/' target='_blank'>the New York Times review.</a>
+       </p>
+       <p>
+         Floyd:
+         <a href='http://members.tripod.com/airfields_freeman/NY/Airfields_NY_NY_Brooklyn.htm#Floyd/' target='_blank'>the historical photo montage.</a>
+       </p>
+       <p>
+         Floyd:
+         <a href='http://www.npca.org/northeast/gateway/FBF_Report.pdf' target='_blank'>the Blue Ribbon Panel report.</a>
+       </p>
+       <p>
+         Floyd:
+         <a href='http://www.thisamericanlife.org/radio-archives/episode/307/in-the-shadow-of-the-city/' target='_blank'>the This American Life episode about being shipwrecked in nearby Jamaica Bay.</a>
+       </p>
+     </div>
+     <div id='ephemera'>
+       <h2>updates</h2>
+       <div id='twitter-widget-container'>
+         <script type='text/javascript'>
+           //<![CDATA[
+             new TWTR.Widget({
+               version: 2,
+               type: 'search',
+               search: '#floyding',
+               interval: 6000,
+               title: '',
+               subject: 'use #floyding to post updates here',
+               //width: 250,
+               //height: 300,
+               width: 325,
+               height: 364,
+               theme: {
+                 shell: {
+                   background: '#8ec1da',
+                   color: '#ffffff'
+                 },
+                 tweets: {
+                   background: '#ffffff',
+                   color: '#444444',
+                   links: '#1985b5'
+                 }
+               },
+               features: {
+                 scrollbar: true,
+                 loop: false,
+                 live: true,
+                 hashtags: true,
+                 timestamp: true,
+                 avatars: true,
+                 toptweets: false,
+                 behavior: 'all'
+               }
+             }).render().start();
+           //]]>
+         </script>
+       </div>
+     </div>
 </template>
