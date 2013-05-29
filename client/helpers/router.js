@@ -1,8 +1,11 @@
 Meteor.Router.add({
-  '/': 'index'
+  '/': 'index',
+	'/activities': 'activities',
+	'/directions': 'directions',
+	'/news': 'news',
+	'/payment': 'payment',
+	'/photos': 'photos',
+	'/provisions': 'provisions',
+	'/rsvp': 'rsvp',
 });
 
-
-Meteor.Router.add({
-  '/activities': 'activities'
-});
