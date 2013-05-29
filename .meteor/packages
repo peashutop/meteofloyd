@@ -7,3 +7,7 @@ autopublish
 insecure
 preserve-inputs
 router
+accounts-facebook
+accounts-ui-unstyled
+accounts-base
+accounts-password

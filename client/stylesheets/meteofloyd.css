@@ -10,7 +10,9 @@ html {
 }
 
 #main{width:100%;}
-header{position:fixed;left:20px;top:20px;background:rgb(255,255,255); background:rgba(255,255,255, .8);padding:25px; width:150px;}
+header{position:fixed;left:20px;top:20px;}
+header > nav, header > div{background:rgb(255,255,255); background:rgba(255,255,255, .8);padding:25px; width:150px;}
+header > div{margin-top:20px;}
 .container{width:700px; width:800px; float:left; margin-left:240px;margin-top:20px; padding:25px; background:rgb(255,255,255); background: rgba(255,255,255,.8); margin-bottom:30px;}
 .nav{padding:0; margin:0; list-style-type:none; line-height:25px;}
 .nav a{text-decoration:none; font-weight:bold;}
