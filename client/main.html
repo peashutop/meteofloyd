@@ -2,11 +2,10 @@
   <title>Aviation Vacation</title>
 </head>
 <body>
-  <div class="container {{containerClass}}">
-  <header class="navbar">
-    <div class="navbar-inner">
-			<a class="brand" href="{{indexPath}}">Floyding</a>
+  <header>
+		<nav>
 			<ul class="nav">
+				<li><a href="{{indexPath}}">Floyding</a></li>
 				<li><a href="{{activitiesPath}}">The Adventure</a></li>					
 				<li><a href="{{directionsPath}}">Directions</a></li>					
 				<li><a href="{{newsPath}}">News</a></li>					
@@ -15,10 +14,10 @@
 				<li><a href="{{provisionsPath}}">Provisions</a></li>					
 				<li><a href="{{rsvpPath}}">RSVP</a></li>					
 			</ul>	
-    </div>
+		</nav>
   </header>
-  <div id="main" class="row-fluid">
+  <div class="container {{containerClass}}">
+  <div id="main">
 		{{renderPage}}
-  </div>
   </div>
 </body>
