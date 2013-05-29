@@ -1,1 +1,9 @@
+/*-- GLOBAL --*/
+#main{width:100%;}
+.container{width:800px;}
+
+
+/*-- HOME --*/
+.container .img-box{background:url('/img/airplane-competition-grainy.jpg') no-repeat;height:600px;position:relative;}
+.container .img-overlay{font-family:Courier, serif;font-size:16px;position:absolute;right:86px;top:98px;width:200px;color:#424141;}
 
