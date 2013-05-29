@@ -26,7 +26,7 @@ ul.contentList > li ul{list-style-type:square;}
 
 /*-- ADVENTURE --*/
 #gmap{width:100%; height:300px; border:1px solid #999;}
-.schedule h3{text-transform:uppercase;color:#444;background-image:url("/img/iconmonstr-time-10-icon.svg");background-size:26px 26px;background-repeat:0;background-repeat:no-repeat;padding:2px 0 0 28px;margin:4px 0;font-size:22px;}
+.contentList h3{text-transform:uppercase;color:#444;background-image:url("/img/iconmonstr-time-10-icon.svg");background-size:26px 26px;background-repeat:0;background-repeat:no-repeat;padding:2px 0 0 28px;margin:4px 0;font-size:22px;}
 .time-meta{font-weight:bold;text-indent:32px;text-transform:uppercase;color:#777;font-size:13px;margin-bottom:10px;width:100%;display:block;}
 
 /*-- PROVISIONS --*/
