@@ -1,0 +1,85 @@
+/* shared banner stuff **************************************************************/
+
+.banner-suite {
+	position:absolute;
+	width:1450px;
+	height:850px;
+	left:-1340px;
+	top: 670px;	
+	z-index:100;
+}
+
+.banner-suite .banner {
+	width:792px;
+	height:85px;
+	border:6px solid #C2D5FF;
+	background:white;
+	text-align:center;
+	position:absolute;	
+}                     
+
+.banner-suite .banner .content-etsy {
+  width:800px;
+  font-size:33px;
+  /*text-decoration:blink;*/
+  color:#303030;
+  margin-top:30px;	
+}
+
+.banner-suite .airplane-medium {
+  height:320px;
+  width:400px;
+  position:absolute;
+  right: 5px;
+  top: -100px;
+  background:url('../images/big-airplane.png') no-repeat;
+}
+
+
+.banner-suite .string-medium {
+	height:1px;
+	width:320px;
+	background-color:#C2D5FF;
+	position:absolute;
+	right:380px;
+	top: 50px;
+}
+
+
+/* intro slideshow ************************************************************************/
+
+#slide-banner.banner-suite .airplane {  top:150px; }
+#slide-banner.banner-suite .airplane-big {  top:150px;}
+#slide-banner.banner-suite .string-big { top:300px; width:310px; right:382px; background:#d9d9d9; }
+#slide-banner.banner-suite {width:1500px; left:-1400px;}
+
+body.home #slides { width:800px; height:600px; }
+body.home .slide  { width:800px; height:600px; text-align:center; background-color:white; }
+.slide .caption   {
+	width:800px;
+	height:48px;
+	position:absolute;
+	top:0px; left:0;
+	background-color:black;
+	color:white;
+	font-size:28px;
+	line-height:48px;
+	margin:0;
+	filter:alpha(opacity=60); /* for IE */
+	opacity:0.6;
+}
+
+#intro-mercy {position:absolute; bottom:5px; right:15px; color:white; z-index:100;}
+
+
+#urban-ruin-exploring .caption { font-size:20px ;}
+
+body.home .slide.intro-text h1 {font-size:96px; color:#C2D5FF; margin:48px; text-align:center;}
+
+body.home .slide.intro-text h1.date { font-size:64px; text-transform:uppercase;
+	font-weight:normal; color:#C2D5FF; margin:102px 0 64px 0; text-align:center; }
+body.home .slide.intro-text h2.location {font-size:64px; font-weight:normal; color:#C2D5FF; text-align:center;}
+
+body.home .slide.description p {margin:42px 24px 0 24px; font-size:48px; line-height:72px; color:#AABCE6; text-align:center;}
+body.home .slide.image {background-color:black;}
+

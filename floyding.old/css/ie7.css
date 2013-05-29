@@ -1,0 +1,6 @@
+/* without this fix, we lose the top margin for the container when the airplane banners are positioned on the DOM */
+body.home #container #globalnav {padding-top:64px; }
+body.home #container {margin-top:0;}
+
+/* reduce spacing that throws form elements off the page */
+body.rsvp form .bottom {margin-top:0px;}

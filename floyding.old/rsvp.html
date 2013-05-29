@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class='rsvp'>
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta content='IegsmGyy2eVEHgNArzZSvrBX6Y0NgMf1B1Z0nTk-LQA' name='google-site-verification' />
+    <title>Aviation Vacation</title>
+    <link href='../yui.yahooapis.com/2.8.1/build/reset/reset-min.css' rel='stylesheet' type='text/css' />
+    <link href='../ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/themes/ui-lightness/jquery-ui.css' media='screen' rel='stylesheet' type='text/css' />
+    <link href='css/aviationvacation.css' media='screen' rel='stylesheet' type='text/css' />
+    <link href='css/airplanes.css' media='screen' rel='stylesheet' type='text/css' />
+    <link href='shadowbox-3.0.3/shadowbox.css' media='screen' rel='stylesheet' type='text/css' />
+    <!--[if IE 7]>
+      <link href='css/ie7.css' media='screen, projection' rel='stylesheet' type='text/css' />
+    <![endif]-->
+    <script src='../www.google.com/jsapi.js'></script>
+    <script>google.load("jquery", "1.4.1");</script>
+    <script>google.load("jqueryui", "1.8.4");</script>
+    <script>google.load("swfobject", "2.2");</script>
+    <script src='js/jquery.cycle.all.min.js' type='text/javascript'></script>
+    <script src='shadowbox-3.0.3/shadowbox.js' type='text/javascript'></script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        $(function() {
+          $("input, select, textarea, button").attr("disabled", "disabled");
+          //$("button").attr("disabled", "disabled");
+        });
+      //]]>
+    </script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18943372-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      //]]>
+    </script>
+  </head>
+  <body class='rsvp'>
+    
+    <div id='container'>
+      <ul id='globalnav'>
+        <li class='home'>
+          <a href='index.html'>Home</a>
+        </li>
+        <li class='activities'>
+          <a href='activities.html'>The adventure</a>
+        </li>
+        <li class='photos'>
+          <a href='photos.html'>Photos</a>
+        </li>
+        <!-- %li.testimonials -->
+        <!-- %a{:href => "/testimonials"} Testimonials -->
+        <li class='news'>
+          <a href='news.html'>News</a>
+        </li>
+        <li class='provisions'>
+          <a href='provisions.html'>What to bring</a>
+        </li>
+        <li class='directions'>
+          <a href='directions.html'>Directions</a>
+        </li>
+        <li class='rsvp'>
+          <a href='rsvp.html'>RSVP</a>
+        </li>
+        <li class='payment'>
+          <a href='payment.html'>Pay up</a>
+        </li>
+      </ul>
+      <div id='content'>
+        <h2 style='display: block; position:absolute; top: 75px; left:100px; font-size: 48px; color:#86AFC0; opacity:90%; text-transform:normal; line-height: 64px;'>RSVP season</h2>
+        <h2 style='display: block; position:absolute; top: 225px; left:150px; font-size: 48px; color:#86AFC0; opacity:90%; text-transform:normal; line-height: 64px;'>begins June 7,</h2>
+        <h2 style='display: block; position:absolute; top: 375px; left:200px; font-size: 48px; color:#86AFC0; opacity:90%; text-transform:normal; line-height: 64px;'>or thereabouts</h2>
+        <form action='/rsvp' method='post'>
+          <div class='column1'>
+            <div class='row'>
+              <label for='name'>Name</label>
+              <input name='name' type='text' />
+            </div>
+            <div class='row'>
+              <label for='email'>Email</label>
+              <input name='email' type='text' />
+            </div>
+            <div class='row'>
+              <label for='address'>Home address</label>
+              <input name='address' type='text' />
+            </div>
+            <div class='row'>
+              <label for='citystatezip'>City, State, ZIP</label>
+              <input name='citystatezip' type='text' />
+            </div>
+            <div class='row'>
+              <label for='number_in_party'>Number in party</label>
+              <input name='number_in_party' type='text' />
+            </div>
+            <div class='row'>
+              <label for='payment_method'>Payment method</label>
+              <select name='payment_method'>
+                <option>-- choose one --</option>
+                <option>$X in advance</option>
+                <option>$X+X' at the door</option>
+              </select>
+            </div>
+            <!--
+              <div class='row'>
+                <label for='# in party'># in party</label>
+                <select name='number_in_party'>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                </select>
+              </div>
+            -->
+          </div>
+          <div class='column2'>
+            <label for='comments'>Describe your Floyding hopes and dreams.</label>
+            <textarea id='comments' name='comments'></textarea>
+          </div>
+          <button style='clear:both;' type='submit'>Submit</button>
+        </form>
+        <script type='text/javascript'>
+          //<![CDATA[
+            //$("input:checkbox, select").uniform();
+          //]]>
+        </script>
+      </div>
+    </div>
+    <div id='overlay'></div>
+  </body>
+</html>

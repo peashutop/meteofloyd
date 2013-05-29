@@ -1,0 +1,541 @@
+html { background:url('../images/runway-bg.jpg'); }
+
+body {
+  font-family:Verdana, Arial, sans-serif;
+  font-size:12px;
+  line-height:20px;
+}
+
+#container {
+  margin:64px auto 36px auto;
+  width:802px;
+}
+
+#content {
+  background-color:white;
+  border:1px solid black;
+  height:525px;
+  position:relative;
+
+}
+
+h1 {font-size:16px; font-weight:bold;}
+h2 {font-size:14px; font-weight:bold;}
+p  { margin:12px 0; }
+
+#globalnav {
+	height:50px;
+}
+
+#globalnav li {
+  display: inline;
+  float:left;
+  padding:0 0 0 0;
+  margin:6px 0 6px 36px;
+  font-size:13px;  
+}
+
+#globalnav li.home { margin-left: 12px; }
+
+#globalnav li a, #globalnav li a:visited {
+  text-decoration:none;
+  color:black;
+}             
+
+#globalnav li a:hover {
+  text-decoration:underline;	
+}
+
+body.home         #globalnav li.home         a { font-weight:bold; }
+body.activities   #globalnav li.activities   a { font-weight:bold; }
+body.photos       #globalnav li.photos       a { font-weight:bold; }
+body.testimonials #globalnav li.testimonials a { font-weight:bold; }
+body.news         #globalnav li.news         a { font-weight:bold; }
+body.provisions   #globalnav li.provisions   a { font-weight:bold; }
+body.directions   #globalnav li.directions   a { font-weight:bold; }
+body.rsvp         #globalnav li.rsvp         a { font-weight:bold; }
+
+/* home page ******************************************************/
+
+html.home { background-image: none; background-color: white; }
+body.home { background:white; }
+
+body.home #content {
+	background:url('../images/airplane-competition-grainy.jpg') no-repeat;
+	z-index:1;
+}
+
+body.home .box {
+  background-image:url('../images/transparencies/white50.png');
+}
+
+body.home #basics-box {
+	font-family:Courier;
+	font-size:16px;
+	position:absolute;
+	right:86px;
+	top:98px;
+	width:200px;
+	color:#424141;
+	/*background-image:url('../images/transparencies/white60.png'); */
+	/*padding:12px;*/
+}
+
+body.home #basics-box p {
+margin: 0;
+}
+
+body.home #basics-box h2 {
+  font-size:18px;
+}
+
+/* photos page ***************************************************/
+
+body.photos .controls {
+  text-indent: -9999px;
+  position: absolute;
+  width: 184px;
+  height: 143px;
+  position: absolute;
+  top: 160px;
+}
+
+body.photos #next {
+  background-image:url('../images/airplane-next-photo.png');
+  /*right: -210px;*/
+  right: 40px;
+}	
+
+body.photos #prev {
+  background-image:url('../images/airplane-prev-photo.png');
+  /*left: -210px;*/
+  left: 180px;
+}	
+
+
+body.photos #slides {
+    margin:3em auto 2em auto;
+	height: 400px;
+	width: 500px;
+	overflow:hidden;
+	background-color:black;	
+}
+body.photos .slide {
+	position:relative;
+	height: 400px;
+	width: 500px;
+}
+
+body.photos .slide img {
+	height:400px;
+}
+
+body.photos .fb-fb-photos-link {
+	margin:2em auto 0 auto;
+	text-align:center;
+}
+
+/* testimonials page ***************************************************/
+
+/* body.testimonials #content { background-color:#4D4A4B; } */
+  
+body.testimonials #grid a {
+  position:absolute;
+  width:205px;
+  height:137px;
+  border: 5px solid #121212;  
+  /*border:5px solid #fff;*/
+  text-indent: -9999px;
+  text-decoration:none;
+}
+
+body.testimonials #grid a .caption {
+  background-color:black;
+  opacity:0.65;
+  padding:6px;
+  color:white;
+  font-size:16px;
+  line-height:20px;
+  text-align:center;
+  display:none;
+}
+
+body.testimonials #grid a:hover .caption {
+  display:block;
+  position: absolute;
+  bottom:0;
+  width:193px;
+}
+
+body.testimonials #grid a:hover {
+  /* border: 5px solid #E6E6E6;*/
+  border: 5px solid #4A4A4A;
+  /*background:none;*/
+  text-indent: 0;
+  background-color:#525151;
+}
+
+body.testimonials #grid a.placeholder {
+  background-color:#BDBDBD;	
+}
+
+.row1 { top: 21px;  }
+.row2 { top: 189px; }
+.row3 { top: 357px; }
+
+.col1 { left: 42px;  }
+.col2 { left: 294px; }
+.col3 { left: 546px; }
+
+#betsy {    background:url('../images/betsy-still.jpg');             }
+#jared {    background:url('../images/jared-still.jpg');             }
+#gary  {    background:url('../images/gary-still.jpg');              }
+#allison {  background:url('../images/allison-still.jpg');           }
+#airplane { background:url('../images/clarence-airplane-still.jpg'); }
+
+#sb-info {
+  background-color:black;	
+}   
+
+#container {z-index:3000;}
+#player-container {
+  border:4px solid green;
+  z-index:3000;
+  width:800px;
+  height:800px;
+  background-color:white; 	
+}
+
+#videocontainer {
+  z-index:3000;
+  border:1px solid yellow;
+}
+
+#betsyplayer {
+  z-index:3000;
+
+}
+#overlay {
+  display:none;
+  z-index:5;
+  width:100%;
+  height:100%; 
+  top:0;
+  left:0; 
+  background-color:#000; 
+  opacity:0.8;  
+  position:fixed;  
+}
+
+/* news page ***************************************************/
+
+body.news h2 {
+  font-size:36px;
+  color:#A8D2E3;
+  font-weight:normal;
+  line-height:64px;
+}
+
+#timeless {
+  position:absolute;
+  width:380px;
+  height:500px;
+  top: 0;
+  left: 0px;
+  padding:0 24px;	
+}
+
+#ephemera {
+  position:absolute;
+  width:250px;
+  height:500px;
+  top: 0;
+  left: 450px;
+}
+
+body.news #twtr-widget-1 {
+  margin-left:0 !important;	
+}
+
+body.news h1 {
+	font-size:39px;color:#A8D2E3; font-weight:normal;
+	letter-spacing:-4px;
+	line-height:48px;
+}
+
+#twtr-widget-1 {
+  margin: 0 0 0 20px;
+  border: 1px;
+  float: left;
+  width:300px;
+}
+
+#clips {
+  width: 350px;
+  background-color:#F2F0F0;
+  float: right;
+  margin-right:24px;
+  padding:12px;
+}
+
+#clips p {
+   font-size: 16px;
+  line-height:20px;
+  margin: 18px 0;
+
+}
+
+#clips p a {
+  text-decoration:none;
+  color: #A8D2E3;	
+}
+
+#clips p a:hover {
+  color: #7A97A3;	
+}
+
+/* rsvp page ***************************************************/
+
+body.rsvp form {margin:12px 0 0 84px;}
+body.rsvp form label, body.rsvp form h2 { display:block; margin:18px 0 0 3px; }
+body.rsvp h2 {text-transform:uppercase; font-weight:normal; font-size:12px; padding-left:0px; }
+
+/* borrowed from http://static.flowplayer.org/tools/demos/validator/css/form.css */
+body.rsvp form input {
+	/*border:1px solid #444;*/
+	border:none;
+	background-color:#E8E8E8; /* #666; */
+	padding:8px;
+	color:black;
+	font-size:24px;
+	width:250px;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;	
+}
+
+body.rsvp form select {
+	border:1px solid rgb(182, 180, 180);
+	background-color:#E8E8E8; /* #666; */
+	color:black;
+	font-size:12px;
+	width:265px;
+	height:36px;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;		
+}
+
+form input:focus 	{ color:#fff; background-color:#777; }
+form input:active 	{ background-color:#888; }
+
+body.rsvp form label.checkbox {display:inline;}
+body.rsvp form input[type='checkbox'] {width:20px;}
+
+body.rsvp .column1 {width: 300px; height: 250px; float:left;}
+body.rsvp .column2 {width: 300px; float:left; margin:0 0 0 48px;}
+
+body.rsvp button {
+	position:absolute;
+	right: 43px;
+	bottom: 24px;
+	outline:0;
+	border:1px solid #666;
+	width:200px;
+	height:50px;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+    /* background-image: -moz-linear-gradient(top,#4d90fe,#4787ed);
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#4d90fe),to(#4787ed));
+	*/
+	font-size:20px;	
+}
+
+body.rsvp form .bottom {width:650px; margin:48px 0 0 0; clear:both;}
+body.rsvp #gear {width:625px; height:30px; font-size:20px; background-color:#E8E8E8; border:none; margin:0;}
+body.rsvp #comments {width:325px; height:375px; font-size:20px; background-color:#E8E8E8; border:none; margin:0;}
+body.rsvp button{margin-top:20px; border:none;}
+/* body.rsvp button:hover{background-color:#757575; color:white;} */
+
+/* provisions page ***************************************************/
+
+body.provisions #content { font-family:Helvetica; }
+body.provisions .section {clear:both;}
+body.provisions .section ul {float:left; width:385px;}
+body.provisions .section li {font-size:18px; line-height:30px; font-weight:normal;}
+body.provisions .section h2 {font-weight:normal; width:385px; float:left; margin:12px 16px 0 12px;}
+
+body.provisions #recommended { color:#86AFC0;}
+body.provisions #recommended h2 {
+	font-size:64px;
+	font-weight:bold;
+	line-height:50px;
+}
+body.provisions #recommended li { color: #6591A3;}
+body.provisions #recommended a, body.provisions #recommended a:visited {color:#85A8B6;}
+body.provisions #recommended a:hover   {color:#7A006A;}
+
+body.provisions #provided {color:#7A006A; margin-top:12px;}
+body.provisions #provided h2 {
+	font-size:40px; font-weight:bold;
+	font-family:Helvetica; color;
+	line-height:50px;
+}
+
+body.provisions #optional {color:#C2BEBE;}
+body.provisions #optional h2 {
+	font-size:23px; font-weight:bold;
+	font-family:Helvetica; color;
+	line-height:80px;
+}
+
+body.provisions h2#questions {
+	position:absolute;
+	bottom:1px;
+	left:12px;
+	font-weight:normal;
+	font-size:12px;
+}
+
+body.provisions h2#questions a {color:black;text-decoration:none;}
+body.provisions h2#questions a:hover {color:#C2BEBE;text-decoration:none;}
+
+/* activities page ***************************************************/
+             
+body.activities h1 {
+  font-size:38px;
+  color:#A8D2E3;
+  font-weight:normal;
+  letter-spacing:-2px;
+  line-height:48px;
+  margin: 3px 0 0 12px;
+}
+
+body.activities #adventure #intro {
+  margin:3px 12px 12px 12px;
+  font-style:italic;
+  line-height:14px;  
+}
+
+#accordion {
+  position:relative;
+  width: 305px;
+  margin-left:12px;
+}
+
+#accordion .ui-widget-content {
+ /*border: none !important;*/
+/*  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+*/
+}
+
+
+#accordion .ui-icon {
+  left: 0px !important;	
+}
+
+body.activities h3 {
+  min-height: 24px !important;
+  font-size:16px !important;
+  font-weight:bold !important;
+  color:#88A8B5 !important;
+  padding-left:16px;
+  line-height: 24px;
+}
+
+body.activities h3 .timeframe {
+  font-weight:normal;
+  font-variant:small-caps;
+  display:inline-block;
+  width:75px;
+}
+	
+body.activities #content li {
+	list-style: circle outside;
+	line-height:14px;
+	margin-top:5px;
+}
+
+body.activities #rami {
+  background:url('../images/runway-dancing.jpg');	
+  text-indent: -9999px;
+}
+
+body.activities #map-embed {
+	float:right;
+	margin:12px 12px 12px 12px;
+}
+
+
+
+/* ABOUT FLOYD  **************************************************************/
+
+body.background p {
+	font-size:36px;
+	margin:36px 12px 0 48px;
+	line-height:36px;
+}
+
+body.background p a { text-decoration:none; color:#A8D2E3; }
+body.background p a:hover { text-decoration:none; color:#7A97A3; }
+
+
+/* DIRECTIONS ***********************************************/
+body.directions h2 {font-size:24px; margin:36px 24px 0px 24px; color:#A8D2E3; text-transform:uppercase;}
+body.directions h2.intro {text-transform:none; font-size:36px; line-height:42px; font-weight:normal;}
+body.directions h2.intro a, body.directions h2.intro a:visited {font-weight:normal; text-decoration:none; color:#718E99;}
+body.directions h2.intro a:hover {text-decoration:underline;}
+body.directions p {font-size:18px; margin:6px 24px; line-height:22px;}
+body.directions p a, body.directions a:visited {color:black;}
+
+
+/* PAYMENT ***********************************************/
+body.payment h2 {font-size:24px; margin:36px 24px 0px 24px; color:#A8D2E3; text-transform:uppercase;}
+body.payment h2.intro {text-transform:none; font-size:36px; line-height:42px; font-weight:normal;}
+body.payment h2.intro a, body.directions h2.intro a:visited {font-weight:normal; text-decoration:none; color:#718E99;}
+body.payment h2.intro a:hover {text-decoration:underline;}
+body.payment p {font-size:15px; margin:16px 22px; line-height:22px;}
+body.paymnent p a, body.directions a:visited {color:black;}
+
+
+/* RSVP-THANKS *********************************************/
+body.rsvp-thanks h2 {font-size:160px; line-height:160px; color:#A8D2E3; font-weight:normal; text-align:center; margin-top:128px;}
+body.rsvp-thanks p  {margin-top:4em; text-align:center;}
+
+/* MUSIC ***************************************************/
+
+body.music #content {
+ padding:1em;	
+}
+
+body.music #content h1 {
+  text-align:center;
+  font-size: 200px;
+  color:#A8D2E3;	
+  position: absolute;
+  opacity: 0.2;
+  line-height:230px;
+  left: 200px;
+  padding:0;
+  z-index:0;
+  top: 100px;
+}
+
+body.music #content h1.hearts {
+  top: 300px;	
+}
+
+body.music #content h1.copy {
+  top: 500px;	
+}
+body.music ol {
+  position: relative;
+}
+
+body.music ol li {
+ list-style-type: decimal;
+ margin:0 0 .5em 4em;
+ line-height:1.3em;
+ z-index:100;
+/* padding-left:.5em;*/
+ 
+}
