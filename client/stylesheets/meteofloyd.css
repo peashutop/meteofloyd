@@ -1,7 +1,17 @@
 /*-- GLOBAL --*/
+html { 
+  background: url(/img/runway-new.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./img/runway-new.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/img/runway-new.jpg', sizingMethod='scale')";
+}
+
 #main{width:100%;}
-header{position:fixed;left:20px;top:20px;background:#eee;padding:25px; width:150px;}
-.container{width:700px; width:800px; float:left; margin-left:240px;margin-top:20px;}
+header{position:fixed;left:20px;top:20px;background:rgb(255,255,255); background:rgba(255,255,255, .8);padding:25px; width:150px;}
+.container{width:700px; width:800px; float:left; margin-left:240px;margin-top:20px; padding:25px; background:rgb(255,255,255); background: rgba(255,255,255,.8);}
 .nav{padding:0; margin:0; list-style-type:none; line-height:25px;}
 .nav a{text-decoration:none; font-weight:bold;}
 
