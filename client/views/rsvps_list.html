@@ -1,0 +1,32 @@
+<template name="rsvpsList">
+
+<div class="rsvps">
+
+<table class="rsvpList">
+
+<thead>
+<tr>
+<th>Name</th>
+<td>Email</th>
+<td>Address</th>
+<td># in party</th>
+<th>Hopes and Dreams</th>
+<th>Payment Method</th>
+<th>RSVP date</th>
+</thead>	
+
+<tbody>
+{{#each rsvps}}
+<tr>    
+<td>{{name}}</td>
+<td>{{email}}</td>
+<td>{{address}}, {{citystatezip}}</td>
+<td>{{number_in_party}}</td>
+<td>{{dreams}}</td>
+<td>{{payment_method}}</td>
+<td>{{created_at}}</td>
+{{/each}}
+</tr>
+</tbody>
+
+</template>

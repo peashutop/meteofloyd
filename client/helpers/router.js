@@ -7,6 +7,7 @@ Meteor.Router.add({
   '/photos': 'photos',
   '/provisions': 'provisions',
   '/rsvp': 'rsvp',
-  '/rsvptest': 'rsvptest'
+  '/thanks': 'thanks',
+  '/rsvps': 'rsvpsList'
 });
 
