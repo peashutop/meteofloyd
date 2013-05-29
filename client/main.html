@@ -2,18 +2,7 @@
   <title>Aviation Vacation</title>
 </head>
 <body>
-  <div class="container">
-		<!-- <div class="navbar">
-  <div class="navbar-inner">
-    <a class="brand" href="#">Title</a>
-    <ul class="nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Link</a></li>
-      <li><a href="#">Link</a></li>
-    </ul>
-  </div>
-</div> -->
-		
+  <div class="container {{containerClass}}">
   <header class="navbar">
     <div class="navbar-inner">
 			<a class="brand" href="{{indexPath}}">Floyding</a>
@@ -29,8 +18,8 @@
     </div>
   </header>
   <div id="main" class="row-fluid">
-    <p>Hello, Floyd Bennett {this is from the main/layout}</p>
-	{{renderPage}}
+  	<p>Hello, Floyd Bennett {this is from the main/layout}</p>
+		{{renderPage}}
   </div>
   </div>
 </body>
